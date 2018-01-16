@@ -1,0 +1,30 @@
+tomcat:
+  accessLogEnabled: false
+  protocolHeader: x-forwarded-proto
+  remoteIpHeader: x-forwarded-for
+  basedir:
+  backgroundProcessorDelay: 30
+
+mybatis:
+  type-aliases-package: com.alguojian.test.model
+  configuration:
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    multiple-result-sets-enabled: true
+
+server:
+  context-path: /
+  port: 8090
+  address: 192.168.1.103
+
+spring:
+  datasource:
+    username: root
+    password: root!Q2w
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql.local:3306/develop
+  jpa:
+    show-sql: true
+
+
+
